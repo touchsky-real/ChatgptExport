@@ -20,27 +20,7 @@
 
 如果只使用浏览器控制台里的 `chatgpt_collect_visible.js`，不需要 Python 环境。
 
-如果要使用 `auto_scroll_down.py` 自动滚动，建议先用 `venv` 创建一个独立环境：
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-这个脚本只使用 Python 标准库，不需要额外 `pip install`。
-
-如果 PowerShell 阻止激活脚本，可以在当前终端临时放开执行策略：
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-```
-
-退出虚拟环境：
-
-```powershell
-deactivate
-```
+`auto_scroll_down.py`只使用 Python 标准库，不需要安装额外包。
 
 ## 使用方法
 
