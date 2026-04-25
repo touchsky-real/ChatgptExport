@@ -33,11 +33,10 @@
 如果你不想一直手动滚轮，也可以配合自动滚动脚本：
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
-python auto_scroll_down.py
+python auto_scroll_down.py --steps 500 --interval 1.0 --lines 8 --delay 5
 ```
 
-运行后会先等 3 秒，你把焦点切到浏览器里的 ChatGPT 对话页面即可。
+运行后会先等 5 秒，你把焦点切到浏览器里的 ChatGPT 对话页面即可。
 运行过程中按 `Esc` 可以立即停止自动滚动。
 
 ## 运行方式
@@ -67,20 +66,7 @@ python auto_scroll_down.py
 
 ## 自动滚动脚本
 
-默认用法：
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-python auto_scroll_down.py
-```
-
-也可以不激活环境，直接调用虚拟环境里的 Python：
-
-```powershell
-.\.venv\Scripts\python.exe auto_scroll_down.py
-```
-
-常用参数：
+使用方法：
 
 ```powershell
 python auto_scroll_down.py --steps 500 --interval 1.0 --lines 8 --delay 5
@@ -98,12 +84,6 @@ python auto_scroll_down.py --steps 500 --interval 1.0 --lines 8 --delay 5
 中途退出：
 
 - 按 `Esc` 可立即停止自动滚动。
-
-## 适合的场景
-
-- 对话太长，页面有懒加载
-- 不想走 Playwright / Selenium 自动化登录
-- 你愿意自己手动慢慢往下滚
 
 ## 注意
 
